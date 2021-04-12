@@ -1,0 +1,18 @@
+<ngb-carousel>
+  <ng-template 
+  *ngFor="let caro of caroSection" 
+  ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="caro.image_url" alt="Angular Carousel 1" id="custom-img">
+    </div>
+    <div class="carousel-caption">
+      <h3>{{ caro.title }}</h3>
+      <p>{{ caro.body }}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<div class="container article">
+    <h3>{{ articleTitle }}</h3>
+    <p [innerHTML]="articleBody"></p>
+</div>
+
